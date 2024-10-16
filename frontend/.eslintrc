@@ -1,0 +1,7 @@
+// .eslintrc file (no extension)
+{
+  "extends": ["react-app"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

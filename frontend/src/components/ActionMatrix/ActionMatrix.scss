@@ -1,0 +1,73 @@
+.actionMatrixItemList {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 20%);
+  background-position: 0 80%;
+  background-size: 10px 10px;
+  width: 100%;
+  background-repeat: repeat-x;
+
+  &.vertical {
+    background-position: 0 3%;
+    background-repeat: repeat-y;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    left: 95%;
+    opacity: 0;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: 80%;
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.routerAnimation {
+  animation: 1s linear 0s 1 slide-in;
+}
+
+@keyframes fromRedtoBlack {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}

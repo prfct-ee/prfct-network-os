@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "pm2-runtime ./app/index.ts --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node-forge": "^1.0.0",
+    "express": "^4.17.2",
+    "node-forge": "^1.2.1",
+    "rate-limiter-flexible": "^2.3.7",
+    "socket.io": "^4.4.1",
+    "twilio": "^3.73.1"
+  }
+}

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  @apply text-pink-600 cursor-pointer hover:text-pink-500 hover:underline;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  @apply p-3 sm:pt-0 sm:p-10 bg-slate-50;
+}

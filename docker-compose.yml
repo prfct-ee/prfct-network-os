@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server:
+    build: ./server/
+    restart: always
+    volumes:
+      - ./server/app/:/usr/src/app/app/
+    ports:
+      - "8080:8080"
+  nginx:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - server

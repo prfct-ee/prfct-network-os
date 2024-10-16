@@ -1,0 +1,20 @@
+{
+  "name": "prfct-network",
+  "version": "1.0.0",
+  "description": "Browser Native Blockchain Engine",
+  "scripts": {
+    "start": "docker-compose up -d",
+    "build": "docker-compose build",
+    "restart": "docker-compose down --volumes --remove-orphans && docker-compose build && docker-compose up -d",
+    "develop": "docker-compose down --volumes --remove-orphans && docker-compose build && docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prfct-ee/prfct-network.git"
+  },
+  "author": "Mikhail Dunaev & Friends",
+  "bugs": {
+    "url": "https://github.com/prfct-ee/prfct-network/issues"
+  },
+  "homepage": "https://prfct.ee"
+}

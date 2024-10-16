@@ -1,0 +1,22 @@
+{
+  "name": "prfct-network-engine",
+  "version": "0.0.3",
+  "description": "Browser Native Blockchain Engine",
+  "dependencies": {
+    "@types/node-forge": "^1.0.0",
+    "node-forge": "^1.2.1",
+    "react": "^18.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": ""
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.3",
+    "fake-indexeddb": "^4.0.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.6.2"
+  }
+}

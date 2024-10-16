@@ -1,0 +1,5 @@
+export const CHECK_CONNECTION_TIMEOUT = 3000;
+export const SILENCE_TIMEOUT = 6000;
+export const DISCONNECTION_TIMEOUT = 12000;
+export const SHOWING_TIMEOUT = 9000;
+export const HIDING_SHIFT = 200;

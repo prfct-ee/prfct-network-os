@@ -1,0 +1,83 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-storysource": "^6.4.13",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/libsodium-wrappers": "^0.7.9",
+    "@types/node": "^16.11.19",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "buffer": "^6.0.3",
+    "classnames": "^2.3.1",
+    "d3": "^7.6.1",
+    "idb": "^7.0.2",
+    "libsodium-wrappers": "^0.7.10",
+    "path-browserify": "^1.0.1",
+    "prfct-network-engine": "file:src/network",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "react-youtube": "^10.1.0",
+    "sass": "^1.47.0",
+    "socket.io-client": "^4.4.1",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "rm -rf ./src/network/lib && react-app-rewired build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost",
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
+    "@storybook/addon-links": "^6.4.13",
+    "@storybook/builder-webpack5": "^6.4.13",
+    "@storybook/manager-webpack5": "^6.4.13",
+    "@storybook/node-logger": "^6.4.13",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.13",
+    "@types/d3": "^7.4.0",
+    "autoprefixer": "^10.4.2",
+    "mini-css-extract-plugin": "2.4.5",
+    "postcss": "^8.4.5",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.0.15",
+    "webpack": "^5.66.0"
+  }
+}
